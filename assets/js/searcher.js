@@ -47,12 +47,12 @@ function cargarJSON(json) {
         </div>
       </div>`
       let elementProduct= document.getElementsByClassName("row");
-      elementProduct[2].innerHTML+=message;
+      elementProduct[3].innerHTML+=message;
   }
 }
 
 function excludeJSON(json,filter){
-  document.getElementsByClassName("row")[2].textContent=''; 
+  document.getElementsByClassName("row")[3].textContent=''; 
   //se utiliza textContent ya que segun la documentación es mas rapido que usar innerHTML
   for (const element of json){
     if(filter==element.name || filter==element.type || filter==''){
@@ -77,7 +77,7 @@ function excludeJSON(json,filter){
         </div>
       </div>`
       let elementProduct= document.getElementsByClassName("row");
-      elementProduct[2].innerHTML+=message;
+      elementProduct[3].innerHTML+=message;
     }
   }
 }
@@ -110,7 +110,7 @@ function cargarXML(xml) {
                 </div>
               </div>`
         let elementProduct= document.getElementsByClassName("row");
-        elementProduct[2].innerHTML+=message;
+        elementProduct[3].innerHTML+=message;
     }
 }
 
@@ -143,7 +143,7 @@ function excludeXML (xml,filter){
                 </div>
               </div>`
         let elementProduct= document.getElementsByClassName("row");
-        elementProduct[2].innerHTML+=message;
+        elementProduct[3].innerHTML+=message;
       }}
 }
 
